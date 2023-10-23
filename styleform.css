@@ -1,0 +1,279 @@
+/* by KHAIRANI BILQIS - 121140091 */
+/* Pemrograman Web RB - UTS */
+
+/* Styling untuk tampilan website halaman form*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
+}
+
+h2{
+    font-size: 30px;
+    font-family: Garamond;
+}
+
+/* Gaya untuk header */
+.header{
+    background-color: rgb(44, 44, 44);
+    color: white;
+    height: 165px;
+    border-radius:20px 20px 0px 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Gaya untuk profil gambar di header */
+.headlogo{
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+    border-radius: 20%;
+    transition: 0.20s ease-in-out;
+    background-color: white;
+    object-fit: cover;
+}
+
+.headlogo:hover{
+    scale: 1.1;
+}
+
+.sideprofil{
+    margin-left: 20px;
+    color: white;
+}
+
+.sideprofil h1{
+    margin-bottom: -10px;
+    font-family: Garamond;
+    font-size: 34px;
+}
+/* Akhir untuk gaya pada header */
+
+/* Gaya untuk navigasi */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    background-color: gray;
+    border-radius:0px 0px 20px 20px;
+}
+        
+.menu{
+    list-style: none;
+    padding: 7px 20px 7px 5px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    color: darkmagenta;
+}
+
+.menu a:active{
+    color: indigo;
+}
+/* Akhir untuk gaya pada navigasi */
+
+/* Gaya untuk body-content */
+.body-content{
+    position: relative;
+    display: flex;
+}
+
+/* Gaya untuk content */
+.content{
+    width: 85%;
+    margin: 20px 10px 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: whitesmoke;
+}
+
+.main-content{
+    padding: 0px 20px;
+}
+
+/* Gaya untuk pengaturan form dengan table */
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 5px;
+    text-align: left;
+}
+/* Akhir untuk gaya pengaturan form dengan table */
+
+/* Gaya untuk form */
+.text{
+    width: 300px;
+}
+
+.submit{
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 0, 150);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(0, 0, 100);
+    color: whitesmoke;
+}
+
+.submit:active {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+}
+/* Akhir untuk gaya pada form */
+/* Akhir untuk gaya pada content */
+
+/* Gaya untuk sidebar */
+.sidebar{
+    width: 15%;
+    margin: 20px 10px 10px 5px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.side-menu h3{
+    margin: 0px 0px 10px 0px;
+}
+
+.menu-utama{
+    margin-bottom: 15px;
+    background-color: rgb(99, 99, 99);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.menu-lain{
+    margin-bottom: 15px;
+    background-color: rgb(99, 99, 99);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.kontak{
+    margin-bottom: 15px;
+    background-color: rgb(99, 99, 99);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.sidebarmenu{
+    list-style: none;
+    padding: 5px 0px 0px;
+}
+
+.sidebarmenu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.sidebarmenu a:hover{
+    text-decoration: underline;
+    color: darkmagenta;
+}
+
+.sidebarmenu a:active{
+    color: indigo;
+}
+/* Akhir untuk gaya pada sidebar */
+/* Akhir untuk gaya pada body-content */
+
+/* Gaya untuk footer */
+footer{
+    padding: 5px;
+    margin-top: 10px;    
+    border-radius: 15px;
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+/* Akhir untuk gaya pada footer */
+
+@media screen and (max-width: 760px) {
+    .body-content{
+        flex-wrap: wrap;
+    }
+
+    .content{
+        width: 100%;
+        margin: 15px 10px 10px 5px;
+    }
+
+    .sidebar{
+        width: 100%;
+        margin: 15px 10px 10px 5px;
+        padding: 15px 20px 5px 20px;
+    }
+
+    .side-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu-utama{
+        margin-right: 55px;
+        margin-bottom: 10px;
+    }
+    
+    .menu-lain{
+        margin-right: 55px;
+        margin-bottom: 10px;
+    }
+    
+    .kontak{
+        margin-right: 3px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 615px){
+    .content{
+        overflow-x: scroll;
+    }
+
+    table{
+        margin-right: 10px;
+    }
+
+    .menu-utama{
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .menu-lain{
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .kontak{
+        margin-right: 3px;
+        margin-bottom: 10px;
+    }
+}

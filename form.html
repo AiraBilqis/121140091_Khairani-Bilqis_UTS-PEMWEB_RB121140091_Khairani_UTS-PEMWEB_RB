@@ -1,0 +1,131 @@
+<!-- by KHAIRANI BILQIS - 121140091 -->
+<!-- Pemrograman Web RB - UTS -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Formulir | UTS Pemrograman Web</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Logo_ITERA.png" 
+            alt="Logo ITERA" 
+            class="headlogo"
+        >
+            
+        <div class="sideprofil">
+            <h1>UTS Pemrograman Web</h1>
+            <h3>Halaman Formulir</h3>
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <li class="menu"><a href="index.html">Halaman Utama</a></li>
+        <li class="menu"><a href="form.html">Halaman Formulir</a></li>
+        <li class="menu"><a href="table.html">Halaman Tabel</a></li>
+    </nav>
+
+    <!-- body -->
+    <div class="body-content">
+        <!-- content -->
+        <div class="content">
+            <main class="main-content">
+                <h2>Formulir Pendataan</h2>
+                <p>Isilah formulir di bawah ini dengan informasi yang sesuai:</p>
+                <table width="500">
+                    <form method="get">
+                        <tr>
+                            <td>Nama</td>
+                            <td>: <input required class="text nama" name="nama" type="text"/></td>
+                        </tr>
+        
+                        <tr>
+                            <td>NIM</td>
+                            <td>: <input required class="text nim" name="nim" type="text"/></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Program Studi</td>
+                            <td>: <input required class="text prodi" name="program-studi" type="text"/></td>
+                        </tr>
+                            
+                        <tr>
+                            <td>Email</td>
+                            <td>: <input required class="text email" name="email"  type="email"/></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Password</td>
+                            <td>: <input required class="text password" name="password" type="password"/></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>: 
+                                <input required type="radio" id="laki-laki" name="jnskel" class="jnskel" value="Laki-Laki"/> <label for="laki-laki">Laki-Laki</label>  
+                                <input type="radio" id="perempuan" name="jnskel" class="jnskel" value="Perempuan"/> <label for="perempuan">Perempuan</label> 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td>: <input required name="tanggal lahir" class="tanggal" type="date"/></td>
+                        </tr>
+                        
+                        <tr>  
+                            <td>Alamat</td>
+                            <td>: <input required class="text alamat" name="alamat" type="text"/></td>
+                                
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2"><input class="submit" type="submit" onclick="
+                            addData();"></td>
+                        </tr>
+                    </form>
+                </table>
+            </main>
+        </div>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <aside class="side-menu">
+                <div class="menu-utama">
+                    <h3>Main Menu</h3>
+                        <li class="sidebarmenu"><a href="index.html">Homepage</a></li>
+                        <li class="sidebarmenu"><a href="form.html">Halaman Formulir</a></li>
+                        <li class="sidebarmenu"><a href="table.html">Halaman Tabel</a></li>
+                </div>
+                
+                <div class="menu-lain">
+                    <h3>Other Menu</h3>
+                        <li class="sidebarmenu"><a href="https://www.itera.ac.id/">ITERA</a></li>
+                        <li class="sidebarmenu"><a href="http://siakad.itera.ac.id/">SIAKAD</a></li>
+                        <li class="sidebarmenu"><a href="https://jtpi.itera.ac.id/">JTPI</a></li>
+                        <li class="sidebarmenu"><a href="http://if.itera.ac.id/">Prodi Informatika</a></li>
+                </div>
+
+                <div class="kontak">
+                    <h3>Contact Me</h3>
+                        <li class="sidebarmenu"><a href="https://www.instagram.com/khairani_103/">Instagram</a></li>
+                        <li class="sidebarmenu"><a href="https://github.com/AiraBilqis">Github</a></li>
+                </div>
+            </aside> 
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p><strong>KHAIRANI BILQIS &copy; 2023</strong></p>
+    </footer>
+
+    <script src="/form.js"></script>
+</body>
+</html>
